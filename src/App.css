@@ -69,4 +69,23 @@ body{
     font-weight: 600;
     border-radius: 6px;
     margin: 8px 0;
+
+}
+.todos p{
+    word-break: break-all;
+    cursor: pointer;
+}
+
+.todos .todo-icons svg{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+
+
+.todos .completed{
+    text-decoration: line-through;
+    color: #322a36;
+    font-style: italic;
 }

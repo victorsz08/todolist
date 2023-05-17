@@ -21,6 +21,11 @@ export const TodoCard = () => {
         setTasks(tasks.filter(task => task.id !== id))
     }
 
+    const taskComplete = (id) => {
+        setTasks(tasks.map(task => task.id === id ?
+            {...task, completed: !task.completed} : task))
+    }
+
     return (
         <div className='todo-card'>
             <h1>Lista de tarefas</h1>
@@ -29,7 +34,9 @@ export const TodoCard = () => {
                 <Todos 
                 task={task} 
                 key={index}
-                deleteTask={deleteTask}/>
+                deleteTask={deleteTask}
+                taskComplete={taskComplete}
+                />
             ))}
         </div>
     )
