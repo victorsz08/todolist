@@ -63,11 +63,10 @@ body{
 .todos{
     display: flex;
     justify-content: space-between;
-    border: 2px solid #491667;
+    border: 1px solid #491667;
     border-left: 8px solid #491667;
     padding: 16px;
     font-weight: 600;
-    border-radius: 6px;
     margin: 8px 0;
 
 }
@@ -80,11 +79,14 @@ body{
     cursor: pointer;
     width: 25px;
     height: 25px;
+    margin: 0 4px;
 }
 
+.todo-card h5{
+    margin-bottom:32px ;
+}
 
-
-.todos .completed{
+.todos  .completed{
     text-decoration: line-through;
     color: #322a36;
     font-style: italic;
